@@ -1,0 +1,122 @@
+/* Header Styling */
+
+.homeHeader {
+  text-align: center;
+  padding: 2rem 1rem;
+  background: #323232;
+  color: #fff;
+  border-bottom: 5px solid #040404;
+  border-radius: 12px;
+
+  p {
+    font-size: 1.2rem;
+    font-weight: 300;
+  }
+}
+
+/* Grid Layout */
+.gridContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+}
+
+/* Section Styling */
+.homeSection {
+  background: #fff;
+  border-radius: 8px;
+
+  h2 {
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+    color: #444;
+  }
+
+  p {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+}
+
+.about {
+  grid-column: span 1;
+}
+
+.features {
+  grid-column: span 1;
+}
+
+.blog {
+  margin: 0 auto;
+}
+
+/* Feature List */
+.featureList {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.featureList li {
+  margin-bottom: 0.5rem;
+  padding-left: 30px;
+  position: relative;
+
+  &:before {
+    content: "✔";
+    color: #ffa726;
+    position: absolute;
+    left: 0;
+  }
+}
+
+/* Figure Styling */
+.figure {
+  margin: 1.5rem 0;
+  text-align: center;
+
+  .image {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  .figcaption {
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+    color: #666;
+  }
+}
+
+/* Article Styling */
+.article {
+  margin-bottom: 2rem;
+
+  header {
+    margin-bottom: 0.5rem;
+
+    h3 {
+      font-size: 1.4rem;
+      margin: 0;
+
+      a {
+        color: #f93b01;
+        text-decoration: none;
+        transition: color 0.3s;
+      }
+      a:focus {
+        outline: 3px solid #ffa500; /* Orange focus outline */
+        outline-offset: 3px; /* Space between the element and the outline */
+      }
+    }
+
+    p {
+      font-size: 0.9rem;
+      color: #515151;
+    }
+  }
+
+  p {
+    margin: 0;
+  }
+}
