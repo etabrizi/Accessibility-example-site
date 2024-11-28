@@ -1,7 +1,16 @@
+
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "About - Retro computers",
+  description: "Details about a specific retro computer",
+};
+
 export default function About() {
   return (
     <>
-      <h1>About us page</h1>
+    
+      <h1>About us</h1>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce in
         fringilla tortor, id mattis dui. Morbi lobortis sem at arcu volutpat, in

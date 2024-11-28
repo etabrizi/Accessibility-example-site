@@ -3,11 +3,6 @@ import Navigation from "./components/Navigation";
 import Footer from "./components/Footer";
 import "./globals.scss";
 
-export const metadata: Metadata = {
-  title: "Demo site",
-  description: "A site to show steps for better accessibility",
-};
-
 export default function RootLayout({
   children,
 }: Readonly<{

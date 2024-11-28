@@ -90,7 +90,17 @@
 
 /* Article Styling */
 .article {
+  display: flex; /* Enables horizontal layout for image and content */
+  align-items: flex-start; /* Aligns items at the top */
+  gap: 1rem; /* Space between the image and the content */
   margin-bottom: 2rem;
+
+  img {
+    flex-shrink: 0; /* Prevents the image from shrinking */
+    width: 100px; /* Adjust the image width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Optional: rounded corners */
+  }
 
   header {
     margin-bottom: 0.5rem;
@@ -101,7 +111,7 @@
 
       a {
         color: #f93b01;
-        text-decoration: none;
+        text-decoration: underline;
         transition: color 0.3s;
       }
       a:focus {
@@ -120,3 +130,4 @@
     margin: 0;
   }
 }
+

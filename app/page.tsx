@@ -1,21 +1,22 @@
+
 import styles from "./home.module.scss";
+
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Home - Retro computers",
+  description: "Details about a specific retro computer",
+};
 
 export default function Home() {
   return (
     <>
-      <h1>Welcome to Home Page</h1>
+      <h1>Welcome</h1>
       <div className={styles.gridContainer}>
         <section
           className={`${styles.homeSection} ${styles.about}`}
           aria-labelledby="about-section"
         >
-          <h2 id="about-section">About Us</h2>
-          <p>
-            We are committed to creating accessible, inclusive, and
-            user-friendly web experiences for everyone. Our mission is to ensure
-            all users, regardless of ability, can engage with and benefit from
-            the web.
-          </p>
           <figure className={styles.figure}>
             <img
               className={styles.image}
@@ -47,37 +48,42 @@ export default function Home() {
       >
         <h2 id="blog-section">Latest Articles</h2>
         <article className={styles.article}>
-          <header>
-            <h3>
-              <a href="/article-1">
-                The Importance of Accessibility in Web Design
-              </a>
-            </h3>
+          <img src="/images/computer-article.png" alt="An old retro computer" />
+          <div>
+            <header>
+              <h3>
+                <a href="/article-2">
+                  Top 10 Accessibility Practices for Developers
+                </a>
+              </h3>
+              <p>
+                Posted on <time dateTime="2024-11-20">20th November 2024</time>
+              </p>
+            </header>
             <p>
-              Posted on <time dateTime="2024-11-28">28th November 2024</time>
+              Learn about the top 10 practices that developers can implement to
+              improve accessibility on their projects.
             </p>
-          </header>
-          <p>
-            Discover why accessibility matters and how you can make your
-            websites more inclusive for all users. Read the full article to
-            learn more.
-          </p>
+          </div>
         </article>
         <article className={styles.article}>
-          <header>
-            <h3>
-              <a href="/article-2">
-                Top 10 Accessibility Practices for Developers
-              </a>
-            </h3>
+          <img src="/images/computer-article.png" alt="An old retro computer" />
+          <div>
+            <header>
+              <h3>
+                <a href="/article-2">
+                  Top 10 Accessibility Practices for Developers
+                </a>
+              </h3>
+              <p>
+                Posted on <time dateTime="2024-11-20">20th November 2024</time>
+              </p>
+            </header>
             <p>
-              Posted on <time dateTime="2024-11-20">20th November 2024</time>
+              Learn about the top 10 practices that developers can implement to
+              improve accessibility on their projects.
             </p>
-          </header>
-          <p>
-            Learn about the top 10 practices that developers can implement to
-            improve accessibility on their projects.
-          </p>
+          </div>
         </article>
       </section>
     </>
